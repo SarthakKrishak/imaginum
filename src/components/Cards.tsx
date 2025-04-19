@@ -49,26 +49,26 @@ const Card: React.FC<CardProps> = ({
       )}
       <div className="flex flex-col justify-between w-full">
         <div>
-          <div className="lg:text-5xl text-2xl font-semibold font-figtree pl-7 lg:pt-5 flex flex-col gap-2">
+          <div className="lg:text-5xl text-3xl font-semibold font-figtree md:pl-7 pl-3 lg:pt-5 flex flex-col gap-2">
             <h2>{name}</h2>
             <span className="text-[#6683C1] font-normal">{subtitle}</span>
           </div>
 
-          <p className="md:text-2xl text-white font-sora font-light mt-9 tracking-wide pl-7">
+          <p className="md:text-2xl text-white font-sora font-light lg:mt-9 mt-4 tracking-wide pl-3 md:pl-7">
             {description}
           </p>
-          <div className="flex flex-wrap gap-3 mt-10 pl-7 shrink-0">
+          <div className="flex flex-wrap gap-3 lg:mt-10 mt-6 md:pl-7 pl-3 shrink-0">
             {tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-6 py-[0.8vh] text-base rounded-2xl outline outline-[0.58px] outline-offset-[-0.58px] outline-blue-300"
+                className="px-6 lg:py-[0.8vh] py-[0.5vh] text-base rounded-2xl outline outline-[0.58px] outline-offset-[-0.58px] outline-blue-300"
               >
                 {tag}
               </span>
             ))}
           </div>
         </div>
-        <div className="mt-4 flex items-center gap-4 pl-7">
+        <div className="md:mt-4 mt-6 flex items-center gap-4 md:pl-7 pl-3">
           <a
             href={liveUrl}
             onClick={(e) => {
@@ -85,7 +85,7 @@ const Card: React.FC<CardProps> = ({
             <div className="flex justify-center items-center gap-2">
               {buttonText}
 
-              <img src={right} alt="#" className="h-4" />
+              <img src={right} alt="image" className="h-4" />
             </div>
           </a>
           <span className="text-white text-base">
